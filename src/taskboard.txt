@@ -1,0 +1,38 @@
+
+Complete:
+
+In Progress:
+- Refactor aramture class (it is gross, add better animation mixer too)
+- Player movement does not reconciliae on the client, add some client-authoratative control
+- Server/Client timestep and time synching (might not be needed idk)
+
+Next Steps:
+-Handle client saving and initialization using configs toml files
+-Create the mesh wrapper system and port some VAO functions into it
+-Finish Entity system
+-Test Entity system/physics system linking
+
+To Do :
+-Base render system on interpolation using previous transform and the time until next frame in ClientWindow (only moving objects and animations)
+
+Suggestions:
+- Animations should be a combination of entity status determined by the values sent to the client and animations explicitly sent by the server
+- Look into directly inserting players into the physics system, if possible
+- Change the terrain collision to use a triangle GJK instead of a projected point (or some other approximation thereof)
+
+Issues:
+-Armature animations should have blend modes, some animations retain pose after termination, idle animation should reset it
+
+Windows Issues:
+- GLFW framebuffer swapping does not wait on windows, disable this and force it to wait using an internal framerate limiter, make this a client setting
+- Windows version does not load .ply files properly due to "triangle with more than 3 faces detected", look into this and rewrite the importer for mesh wrapper
+
+Low Priority:
+
+Finished:
+-Create a pipline between the client and the server for validation, communication, synchronization, and scene init
+-Put def vars into a single file
+-Create input GUI for key mapping
+
+Ideas:
+-Add more constraints for armatures

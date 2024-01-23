@@ -1,0 +1,51 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x14\x00l\x00e\x00m\x00u\x00r\x00-\x00g\x00a\x00m\x00e)
+
+[CustomDefinesAndIncludes][ProjectPath0]
+Path=.
+parseAmbiguousAsCPP=true
+parserArguments=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wno-unused-parameter -Wall -std=c++20
+parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c99
+parserArgumentsCuda=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++11
+parserArgumentsOpenCL=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -cl-std=CL1.1
+
+[CustomDefinesAndIncludes][ProjectPath0][Compiler]
+Name=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=exec
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x14\x00l\x00e\x00m\x00u\x00r\x00-\x00g\x00a\x00m\x00e\x00\x00\x00\x08\x00e\x00x\x00e\x00c)
+Dependency Action=Build
+EnvironmentGroup=lemur-game
+Executable=file:///home/ajw/projects/Lemur Game/src
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Kill Before Executing Again=4194304
+Project Target=lemur-game,exec
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[MesonManager]
+Current Build Directory Index=0
+Number of Build Directories=1
+
+[MesonManager][BuildDir 0]
+Additional meson arguments=
+Build Directory Path=/home/ajw/projects/Lemur Game/build
+Meson Generator Backend=ninja
+Meson executable=/usr/bin/meson
+
+[Project]
+VersionControlSupport=kdevgit
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/ajw/.local/share/kdevfiletemplates/template_descriptions/cpp_basic.desktop

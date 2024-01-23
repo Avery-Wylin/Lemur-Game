@@ -1,0 +1,37 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x1e\x00a\x00s\x00s\x00e\x00t\x00_\x00c\x00o\x00n\x00v\x00e\x00r\x00t\x00e\x00r)
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=exec
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x1e\x00a\x00s\x00s\x00e\x00t\x00_\x00c\x00o\x00n\x00v\x00e\x00r\x00t\x00e\x00r\x00\x00\x00\x08\x00e\x00x\x00e\x00c)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///home/ajw/NetBeansProjects/Collision Engine/asset_converter/src
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Kill Before Executing Again=4194304
+Project Target=asset_converter,exec
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[MesonManager]
+Current Build Directory Index=0
+Number of Build Directories=1
+
+[MesonManager][BuildDir 0]
+Additional meson arguments=
+Build Directory Path=/home/ajw/NetBeansProjects/Collision Engine/asset_converter/build
+Meson Generator Backend=ninja
+Meson executable=/usr/bin/meson
+
+[Project]
+VersionControlSupport=kdevgit

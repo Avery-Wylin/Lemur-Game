@@ -1,0 +1,2 @@
+Use the command in the src directory
+meson srcdir builddir --cross-file cross_file.txt

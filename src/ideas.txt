@@ -1,0 +1,128 @@
+This is a multiplayer game about Lemurs, the loveable, endangered primates from the large island of Madagascar.
+This game is a sandbox that focuses on the subjective idea of "progress".
+In many other sandbox games, a very anthropocentric approach is taken on the view of progress.
+Biodiversity is often not an end goal, nor is ecosystem stabalization.
+Lemurs are threatened by fire, meaning technologically the player can not advance beyond anything semi-neolithic.
+
+Instead, satisfaction should be achieved the lemur way with stringent social hierarchy, nest building, sun bathing, fruit eating, and flower sniffing.
+Some anthropomorphic characteristics should be carried over, this is a game for people after all, but they should be naturalized.
+Hence no fire, metal, plastics, glass and possibly even rock or tools should be used.
+
+So how does one progress in this seemingly technologically stagnant and non-competitive world?
+Through biodiversity!
+Lemurs have shaped the island the lived on just as much as it shaped them.
+They selected the trees and plants that inhabit the island through indirect consumption and pollination.
+The player will be able to do the same on the somewhat small island that the player find themselves rafted away to.
+This island is bleak, its biodiversity is limited; it seems it may have suffered some sort of accident leaving it near-barren.
+The player also finds themselves requiring food. Of the few species of plants left, they can be consumed, killed, or sniffed.
+
+The plants of this island are able to be pollinated. Plants within a certain distance will self-pollinate with their own species.
+Plants only pollinate when "flowering" (may not look like flowers depending on the plant type).
+Plants are composed of several types each type with possibly many species. Each individual plant is unique.
+A plant type is the template that a plant is created with, this may be trees, bamboo, bromeliads, flowers, grasses, palms, etc.
+A plant species is a unique form of a plant type that has a unique shape and value structure.
+An individual plant is a member of a species in that is uses the same mesh, but varies in color, size, growth, and seasonality.
+Plants of the same type can be cross pollinated by a player, resulting in either a 5% chance of a new species, or a 50% chance of either parent.
+Each seed is unique, blending properties of both parents, while a new species would blend more specific properties.
+Seeds/fruit are both the way players get food and to replant the island.
+When a player consumes a seed, it gives them nutrients and the ability to replant it. Only a recent history of seeds can be replanted.
+Seeds will not produce new species if the maximum is reached. (Prevents exceeding species cap)
+If too many of the same species is grown, the seed will not sprout at all. (Prevents exceeding instance cap)
+Each species can be coined by the player, allowing for naming your plant lineages.
+Not every seed will grow, a lot of them will fail. The growth rates can be enhanced for each type depending on your lemur type.
+Some lemurs receive more nutrition from the type that they enhance.
+Players can change their lemur type by using their nutrition they have collected.
+If a player fails to get enough nutrition not only will they have to retry, but all of their species they coined will die.
+The ultimate score is the number of species a player owns.
+
+There will always be at least one species for each type, but it will be of poor quality.
+
+Lemur Types
+Each lemur species is unique, but each type uses the same model with different colors
+
+Ruffed Lemur Group (Varecia): Specialized lemurs that are less efficient at non-fruit nutritionsg. Lare nutrition cap of 200.
+Varecia Variegata: Enhance Strelitzia Plant, better cross pollination chance.
+Varecia Rubra: Enhance fruit tree types, better cross pollination chancew.
+
+Sifaka Group (Indridae): Specialized lemurs that are fast jumpers and less efficient at non-leaf nutritions. Large nutrition cap of 250.
+Coquerel's Sifaka: Enhance leafy tree types, better leaping.
+Vereaux's Sifaka: Enhance succulent types, better leaping, can climb succulents.
+Von Der Decken's Sifaka: Enchance leafy tree types, better climbing on land. (Comparable to eulemur coronatus)
+
+Brown Lemur Group: Diverse lemurs that have low nutrition requirements and a small nutrition cap of 150.
+Eulemur Fulvus: Better planting odds, no specialization.
+Eulemur Coronatus: Enhance succulent type, better climbing on land.
+Eulemur Mongoz: Enhance bush types.
+Eulemur Albifrons: Enhance palm types
+Eulemur Macaco: Enhance flower types.
+
+Bamboo Group: Diverse lemurs that are efficient, fast, and very low nutrition requirements and a small nutrition cap of 100.
+Ringtail Lemurs: Enhance grass and bamboo types, better ground speed.
+Alaotran Bamboo Lemur: Enhance water and bamboo plant types, faster swimming.
+
+Lemur Evolution:
+All players will start as Fulvus.
+2 points are collected: biodiversity for each currently existing species and nutrition for each fruit/seed eaten.
+Nutrition points are taken over time. If you run out, the entire species of plants you own die. (Maybe fewer on a forgiving setting)
+When the biodiversity count is met and enough nutrition points are available, a lemur may evolve.
+Nutrition points are sorted by type: Fruit, Flower, Seed, Vegetation. They are consumed randomly.
+Nutrition points are from eating said item. Fruit and seeds will be replantable. Flowers will pollinate. Leaves will harm the plant's growth, not all plants edible.
+
+Notes:
+Points are suggestions, may be larger than shown, the maximum species count should be at least max players * max required bio points. (8 * 9 = 72, so Around 100 is safe)
+Nutrition points may gradually build up but are used for just about everything intensive. A base rate of nutrition points are used each cycle.
+Nutrition points do eventually cap per lemur type.
+A lemur can only select which level of evolution to do, I II or III.
+The cost is then applied if possible. The cost requires at least 5 more nutrition points present than the cost itself.
+It is possible to jump from any species to another with the right nutrition points and bio point types.
+
+3 Bio Points required, 30 Nutrition used
+Default = Fulvus
+75+% Fruit = Mongoz
+75+% Flower = Macaco
+75+% Seed = Albifrons
+75+% Leaves = Coronatus
+
+6 Bio Points required, 60 Nutrition used
+Default = Ringtail
+75+% Fruit OR 50+% Strelitzia Species = Variegata
+75+% Leaves OR 50+% Succulent Species = Verreaux's Sifaka
+
+9 Bio Points required, 90 Nutrition used
+Any other % = Coquerel's Sifaka
+75+% Fruit AND 50+% Fruit Tree Species = Rubra
+75+% Plant AND 50+% Succulent Species = Von Der Decken's Sifaka
+50+% Water Plant Species = Lac Aloatran Bamboo
+
+Plant Types
+Fruit Tree: A large tree that flowers and fruits
+Leafy Tree: A large tree that flowers, but does not fruit
+Succulent: A small to large thorny plant that flowers and fruits, only Vereaux's Sifaka can climb it.
+Bush: A small bush-like tree that flowers, but does not fruit.
+Strelitzia Plant: A moderate sized monocot plant that has pretty flowers and bears small fruit.
+Palm: A moderate sized plant that has inconspicuous flowers and small fruits.
+Flower: A small plant that has a huge variety of flowers.
+Bamboo: A quick growing tall plant that is self-spreading, though it does seed at the top.
+Grass/Reeds: A quick growing small plant that grows in a clump that thickens. Does not flower, but offers seeds.
+Water Plants: A moderate-sized grass-like plant that grows partially submerged in water. Flowers and seeds.
+
+Every player starts as one of the more adaptable lemurs, Eulemur Fulvus.
+Each lemur species of those available gets a buff.
+
+Tree climbing is initiated by colliding with a plant that has a root climbable branch (represented as a collision capsule shape of climbable size) while holding the grab key.
+Upon doing so, the player enters the tree climbing move mode which snaps the player's motion to the branch and removes collision with other climbable root branches.
+
+Along a branch many other climbable branches may be grabbed using the grab key. They only require the right rotation and 1D position within a threshold and do not have collision.
+The player will then snap to this new branch as its climbing branch (the player is placed using the radius of the branch). To go back, the player presses the backwards key (default S) and they will shimmy down the branch.
+Forwards shimmies up the branch, left rotates left, right rotates right, grab snaps to the closest valid climbing branch, and leap exits climb mode entirely.
+If 2 branches are placed very close positionally, the branch angle becomes the limiting factor (largest dot product wins).
+
+This means all generated climbable plants also generate a climbing map. This climbimg map is a bidirectional tree consisting of branches.
+Branches are represented as a single line segment (in 3D space so 2 vec3s), a branch radius, a branch parent, local pointers to other branches, the 1D position of other branches along the given branch, and the 1D angle of rotation of those branches.
+
+The player itself will store the current climibing plant, the branch ID, the climbing angle, and the climbing location (1D spot on a branch).
+
+
+
+
+
