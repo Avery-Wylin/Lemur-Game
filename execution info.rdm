@@ -1,0 +1,14 @@
+Libraries Needed:
+
+Linux: OpenAL Soft GLFW ENet(might be able to statically link)
+Windows: OpenAL32 (probably comes with windows?) OpenGL(definitley comes with windows)
+
+In linux, to run OpenAL specifiy the audio type, for example using pulse:
+ALSOFT_DRIVERS = pulse exec
+
+For wine use
+WINEDEBUG=-all to avoid error logging
+
+The executable must be run in a folder that is in the same directory as the assets saves and config folders
+
+There are no plans to implement a Mac version. You will have to emulate.
